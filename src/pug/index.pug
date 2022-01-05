@@ -47,12 +47,71 @@ html(lang='en')
               a.nav-link(href='#team') Team
             li.nav-item
               a.nav-link(href='#contact') Contact
-    // Masthead
+
+        // Masthead
     header.masthead
       .container
-        .masthead-subheading Welcome To Our Studio!
-        .masthead-heading.text-uppercase It's Nice To Meet Poo
-        a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
+        .intro-text
+          .intro-lead-in UX Designer
+          .intro-heading Jason Sparks
+          .intro-additional-text
+            | BONUS SKILLS - CODING AND DEVELOPMENT, MUSIC COMPOSITION AND PRODUCTION
+
+// About
+section#about
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading About
+    .row
+      .col-lg-12
+        ul.timeline
+          li
+            .timeline-image
+              img.rounded-circle.img-fluid(src='assets/img/about/1.jpg' alt='')
+            .timeline-panel
+              .timeline-heading
+                h4 Me
+              .timeline-body
+                p.text-muted
+                  | I&apos;m a User Experience Designer with a background in front-end/back-end development and quality assurance.
+          li.timeline-inverted
+            .timeline-image
+              img.rounded-circle.img-fluid(src='assets/img/about/2.jpg' alt='')
+            .timeline-panel
+              .timeline-heading
+                h4 Mantra
+          
+              .timeline-body
+                p.text-muted
+                  | I&rsquo;ve always been a good problem solver and UX, like most design, is about finding solutions to problems.
+          li.timeline-image
+            .timeline-image
+              img.rounded-circle.img-fluid(src='assets/img/about/3.jpg' alt='')
+            .timeline-panel
+              .timeline-heading
+                h4 History
+              .timeline-body
+                p.text-muted
+                  | Before UX, I clocked up 12 years of development and testing experience working in agile technology teams in e-Commerce, advertising, and music.
+          li.timeline-inverted
+            .timeline-image
+              img.rounded-circle.img-fluid(src='assets/img/about/4.jpg' alt='')
+            .timeline-panel
+              .timeline-heading
+                h4 Skills
+              .timeline-body
+                // <p class="text-muted">Here's me doing a handstand.</p>
+                p.text-muted I can code, I can compose, and I can do handstands too.
+          li.timeline-image
+            .timeline-image
+              h4
+                | Pleased
+                br
+                | to meet
+                br
+                | you!
+
 
     // Services
     section#services.page-section
@@ -84,134 +143,45 @@ html(lang='en')
               | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
     // Portfolio Grid
-    section#portfolio.page-section.bg-light
+    section#portfolio.bg-light
       .container
-        .text-center
-        h2.section-heading.text-uppercase Portfolio
-        h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
         .row
-          .col-lg-4.col-sm-6.mb-4
-            // Portfolio item 1
-            .portfolio-item
-              a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
-                .portfolio-hover
-                  .portfolio-hover-content
-                    i.fas.fa-plus.fa-3x
-                img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
-              .portfolio-caption
-                .portfolio-caption-heading Threads
-                .portfolio-caption-subheading.text-muted Illustration
-          .col-lg-4.col-sm-6.mb-4
-            // Portfolio item 2
-            .portfolio-item
-              a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
-                .portfolio-hover
-                  .portfolio-hover-content
-                    i.fas.fa-plus.fa-3x
-                img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
-              .portfolio-caption
-                .portfolio-caption-heading Explore
-                .portfolio-caption-subheading.text-muted Graphic Design
-          .col-lg-4.col-sm-6.mb-4
-            // Portfolio item 3
-            .portfolio-item
-              a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
-                .portfolio-hover
-                  .portfolio-hover-content
-                    i.fas.fa-plus.fa-3x
-                img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
-              .portfolio-caption
-                .portfolio-caption-heading Finish
-                .portfolio-caption-subheading.text-muted Identity
-          .col-lg-4.col-sm-6.mb-4.mb-lg-0
-            // Portfolio item 4
-            .portfolio-item
-              a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
-                .portfolio-hover
-                  .portfolio-hover-content
-                    i.fas.fa-plus.fa-3x
-                img.img-fluid(src='assets/img/portfolio/4.jpg', alt='...')
-              .portfolio-caption
-                .portfolio-caption-heading Lines
-                .portfolio-caption-subheading.text-muted Branding
-          .col-lg-4.col-sm-6.mb-4.mb-sm-0
-            // Portfolio item 5
-            .portfolio-item
-              a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
-                .portfolio-hover
-                  .portfolio-hover-content
-                    i.fas.fa-plus.fa-3x
-                img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
-              .portfolio-caption
-                .portfolio-caption-heading Southwest
-                .portfolio-caption-subheading.text-muted Website Design
-          .col-lg-4.col-sm-6
-            // Portfolio item 6
-            .portfolio-item
-              a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
-                .portfolio-hover
-                  .portfolio-hover-content
-                    i.fas.fa-plus.fa-3x
-                img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
-              .portfolio-caption
-                .portfolio-caption-heading Window
-                .portfolio-caption-subheading.text-muted Photography
+          .col-lg-12.text-center
+            h2.section-heading Portfolio
+            h3.section-subheading.text-muted
+              | These are the projects and briefs I've worked on.
+        .row
+          .col-md-4.col-sm-6.portfolio-item
+            .portfolio-link(data-toggle='modal' href='#portfolioModal1')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-fluid(src='assets/images/Squirrel/Squirrel-3-phones-opaque.png' alt='')
+            .portfolio-caption
+              h4 Squirrel
+              p.text-muted FinTech Onboarding
+          .col-md-4.col-sm-6.portfolio-item
+            .portfolio-link(data-toggle='modal' href='#portfolioModal2')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-fluid(src='assets/images/AirFrance/AirFrance-phones-opaque.png' alt='')
+            .portfolio-caption
+              h4 AirFrance
+              p.text-muted Inflight Services App
+          .col-md-4.col-sm-6.portfolio-item
+            .portfolio-link(data-toggle='modal' href='#portfolioModal3')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-fluid(src='assets/images/Firebox/Firebox-Salmon.png' alt='')
+              // <img class="img-fluid" src="assets/images/Firebox/Firebox-Yellow.png" alt="">
+            .portfolio-caption
+              h4 Firebox
+              p.text-muted Redesigning the product personalisation process
 
-    // About
-    section#about.page-section
-      .container
-        .text-center
-          h2.section-heading.text-uppercase About
-          h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-        ul.timeline
-          li
-            .timeline-image
-              img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
-            .timeline-panel
-              .timeline-heading
-                h4 2009-2011
-                h4.subheading Our Humble Beginnings
-              .timeline-body
-                p.text-muted
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-          li.timeline-inverted
-            .timeline-image
-              img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
-            .timeline-panel
-              .timeline-heading
-                h4 March 2011
-                h4.subheading An Agency is Born
-              .timeline-body
-                p.text-muted
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-          li
-            .timeline-image
-              img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
-            .timeline-panel
-              .timeline-heading
-                h4 December 2015
-                h4.subheading Transition to Full Service
-              .timeline-body
-                p.text-muted
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-          li.timeline-inverted
-            .timeline-image
-              img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
-            .timeline-panel
-              .timeline-heading
-                h4 July 2020
-                h4.subheading Phase Two Expansion
-              .timeline-body
-                p.text-muted
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-          li.timeline-inverted
-            .timeline-image
-              h4
-                | Be Part
-                br
-                | Of Our
-                br
-                | Story!
+
+
 
     // Team
     section#team.page-section.bg-light
