@@ -20,6 +20,7 @@ body {
 
 p {
     line-height: $line-height-lg;
+    font-size: 1.25rem;
 }
 
 // Spacing and heading styling for page sections
@@ -40,6 +41,7 @@ p {
         font-family: $subheadings-font-family;
         margin-bottom: 4rem;
     }
+
 }
 
 // Increase the padding on sections when screen size is greater
