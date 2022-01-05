@@ -38,13 +38,12 @@ html(lang='en')
         #navbarResponsive.collapse.navbar-collapse
           ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
             li.nav-item
-              a.nav-link(href='#services') Prototypes
+              a.nav-link(href='#about') About
             li.nav-item
               a.nav-link(href='#portfolio') Portfolio
             li.nav-item
-              a.nav-link(href='#about') About
-            li.nav-item
-              a.nav-link(href='#team') Team
+              a.nav-link(href='#prototypes') Prototypes
+
             li.nav-item
               a.nav-link(href='#contact') Contact
 
@@ -113,137 +112,103 @@ section#about
                 | you!
 
 
-    // Services
-    section#services.page-section
-      .container
-        .text-center
-          h2.section-heading.text-uppercase Services
-          h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-        .row.text-center
-          .col-md-4
-            span.fa-stack.fa-4x
-              i.fas.fa-circle.fa-stack-2x.text-primary
-              i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
-            h4.my-3 E-Commerce
-            p.text-muted
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-          .col-md-4
-            span.fa-stack.fa-4x
-              i.fas.fa-circle.fa-stack-2x.text-primary
-              i.fas.fa-laptop.fa-stack-1x.fa-inverse
-            h4.my-3 Responsive Design
-            p.text-muted
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-          .col-md-4
-            span.fa-stack.fa-4x
-              i.fas.fa-circle.fa-stack-2x.text-primary
-              i.fas.fa-lock.fa-stack-1x.fa-inverse
-            h4.my-3 Web Security
-            p.text-muted
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+        // Portfolio Grid
+        section#portfolio.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Portfolio
+                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                .row
+                    .col-lg-4.col-sm-6.mb-4
+                        // Portfolio item 1
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
+                            .portfolio-caption
+                                .portfolio-caption-heading Threads
+                                .portfolio-caption-subheading.text-muted Illustration
+                    .col-lg-4.col-sm-6.mb-4
+                        // Portfolio item 2
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
+                            .portfolio-caption
+                                .portfolio-caption-heading Explore
+                                .portfolio-caption-subheading.text-muted Graphic Design
+                    .col-lg-4.col-sm-6.mb-4
+                        // Portfolio item 3
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
+                            .portfolio-caption
+                                .portfolio-caption-heading Finish
+                                .portfolio-caption-subheading.text-muted Identity
+                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
+                        // Portfolio item 4
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/4.jpg', alt='...')
+                            .portfolio-caption
+                                .portfolio-caption-heading Lines
+                                .portfolio-caption-subheading.text-muted Branding
+                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
+                        // Portfolio item 5
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
+                            .portfolio-caption
+                                .portfolio-caption-heading Southwest
+                                .portfolio-caption-subheading.text-muted Website Design
+                    .col-lg-4.col-sm-6
+                        // Portfolio item 6
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
+                            .portfolio-caption
+                                .portfolio-caption-heading Window
+                                .portfolio-caption-subheading.text-muted Photography
 
-    // Portfolio Grid
-    section#portfolio.bg-light
-      .container
-        .row
-          .col-lg-12.text-center
-            h2.section-heading Portfolio
-            h3.section-subheading.text-muted
-              | These are the projects and briefs I've worked on.
-        .row
-          .col-md-4.col-sm-6.portfolio-item
-            .portfolio-link(data-toggle='modal' href='#portfolioModal1')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-plus.fa-3x
-              img.img-fluid(src='assets/images/Squirrel/Squirrel-3-phones-opaque.png' alt='')
-            .portfolio-caption
-              h4 Squirrel
-              p.text-muted FinTech Onboarding
-          .col-md-4.col-sm-6.portfolio-item
-            .portfolio-link(data-toggle='modal' href='#portfolioModal2')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-plus.fa-3x
-              img.img-fluid(src='assets/images/AirFrance/AirFrance-phones-opaque.png' alt='')
-            .portfolio-caption
-              h4 AirFrance
-              p.text-muted Inflight Services App
-          .col-md-4.col-sm-6.portfolio-item
-            .portfolio-link(data-toggle='modal' href='#portfolioModal3')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-plus.fa-3x
-              img.img-fluid(src='assets/images/Firebox/Firebox-Salmon.png' alt='')
-              // <img class="img-fluid" src="assets/images/Firebox/Firebox-Yellow.png" alt="">
-            .portfolio-caption
-              h4 Firebox
-              p.text-muted Redesigning the product personalisation process
 
-
-
-
-    // Team
-    section#team.page-section.bg-light
-      .container
-        .text-center
-          h2.section-heading.text-uppercase Our Amazing Team
-          h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-        .row
-          .col-lg-4
-            .team-member
-              img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
-              h4 Parveen Anand
-              p.text-muted Lead Designer
-              a.btn.btn-dark.btn-social.mx-2(href='#!')
-                i.fab.fa-twitter
-              a.btn.btn-dark.btn-social.mx-2(href='#!')
-                i.fab.fa-facebook-f
-              a.btn.btn-dark.btn-social.mx-2(href='#!')
-                i.fab.fa-linkedin-in
-          .col-lg-4
-            .team-member
-              img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='...')
-              h4 Diana Petersen
-              p.text-muted Lead Marketer
-              a.btn.btn-dark.btn-social.mx-2(href='#!')
-                i.fab.fa-twitter
-              a.btn.btn-dark.btn-social.mx-2(href='#!')
-                i.fab.fa-facebook-f
-              a.btn.btn-dark.btn-social.mx-2(href='#!')
-                i.fab.fa-linkedin-in
-          .col-lg-4
-            .team-member
-              img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='...')
-              h4 Larry Parker
-              p.text-muted Lead Developer
-              a.btn.btn-dark.btn-social.mx-2(href='#!')
-                i.fab.fa-twitter
-              a.btn.btn-dark.btn-social.mx-2(href='#!')
-                i.fab.fa-facebook-f
-              a.btn.btn-dark.btn-social.mx-2(href='#!')
-                i.fab.fa-linkedin-in
-        .row
-          .col-lg-8.mx-auto.text-center
-            p.large.text-muted
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
-
-    // Clients
-    div.py-5
-      .container
-        .row.align-items-center
-          .col-md-3.col-sm-6.my-3
-            a(href='#!')
-              img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...')
-          .col-md-3.col-sm-6.my-3
-            a(href='#!')
-              img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...')
-          .col-md-3.col-sm-6.my-3
-            a(href='#!')
-              img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...')
-          .col-md-3.col-sm-6.my-3
-            a(href='#!')
-              img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...')
+        // Prototypes
+        section#prototypes.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Prototypes
+                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                .row.text-center
+                    .col-md-6
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
+                        h4.my-3 E-Commerce
+                        p.text-muted
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                    .col-md-6
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
+                        h4.my-3 Responsive Design
+                        p.text-muted
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            
 
     // Contact
     section#contact.page-section
