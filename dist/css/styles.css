@@ -11416,19 +11416,26 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
-header.masthead .masthead-subheading {
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
 header.masthead .masthead-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .masthead-subheading {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .masthead-strapline {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 0 auto;
+  max-width: 70%;
 }
 
 @media (min-width: 768px) {
@@ -11436,17 +11443,23 @@ header.masthead .masthead-heading {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
   }
-  header.masthead .masthead-subheading {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
   header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  header.masthead .masthead-strapline {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+    max-width: 70%;
   }
 }
 .timeline {

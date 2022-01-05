@@ -8,7 +8,7 @@ html(lang='en')
     meta(name='description', content='')
     meta(name='author', content='')
 
-    title Agency - Start Bootstrap Theme
+    title Jason Sparks - UX Portfolio
 
     // Favicon
     link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -43,18 +43,15 @@ html(lang='en')
               a.nav-link(href='#portfolio') Portfolio
             li.nav-item
               a.nav-link(href='#prototypes') Prototypes
-
             li.nav-item
               a.nav-link(href='#contact') Contact
 
-        // Masthead
+    // Masthead
     header.masthead
-      .container
-        .intro-text
-          .intro-lead-in UX Designer
-          .intro-heading Jason Sparks
-          .intro-additional-text
-            | BONUS SKILLS - CODING AND DEVELOPMENT, MUSIC COMPOSITION AND PRODUCTION
+        .container
+            .masthead-heading.text-uppercase Jason Sparks
+            .masthead-subheading User Experience Designer
+            .masthead-strapline Bonus skills - coding and development, advanced prototyping, music composition and production
 
 // About
 section#about
@@ -119,7 +116,7 @@ section#about
                     h2.section-heading.text-uppercase Portfolio
                     h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
                 .row
-                    .col-lg-4.col-sm-6.mb-4
+                    .col-lg-6.col-sm-6.mb-4
                         // Portfolio item 1
                         .portfolio-item
                             a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
@@ -130,7 +127,7 @@ section#about
                             .portfolio-caption
                                 .portfolio-caption-heading Threads
                                 .portfolio-caption-subheading.text-muted Illustration
-                    .col-lg-4.col-sm-6.mb-4
+                    .col-lg-6.col-sm-6.mb-4
                         // Portfolio item 2
                         .portfolio-item
                             a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
@@ -141,7 +138,7 @@ section#about
                             .portfolio-caption
                                 .portfolio-caption-heading Explore
                                 .portfolio-caption-subheading.text-muted Graphic Design
-                    .col-lg-4.col-sm-6.mb-4
+                    .col-lg-6.col-sm-6.mb-4
                         // Portfolio item 3
                         .portfolio-item
                             a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
@@ -152,7 +149,7 @@ section#about
                             .portfolio-caption
                                 .portfolio-caption-heading Finish
                                 .portfolio-caption-subheading.text-muted Identity
-                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
+                    .col-lg-6.col-sm-6.mb-4.mb-lg-0
                         // Portfolio item 4
                         .portfolio-item
                             a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
@@ -163,28 +160,30 @@ section#about
                             .portfolio-caption
                                 .portfolio-caption-heading Lines
                                 .portfolio-caption-subheading.text-muted Branding
-                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
-                        // Portfolio item 5
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Southwest
-                                .portfolio-caption-subheading.text-muted Website Design
-                    .col-lg-4.col-sm-6
-                        // Portfolio item 6
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Window
-                                .portfolio-caption-subheading.text-muted Photography
+                    
+                    
+                    //- .col-lg-4.col-sm-6.mb-4.mb-sm-0
+                    //-     // Portfolio item 5
+                    //-     .portfolio-item
+                    //-         a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
+                    //-             .portfolio-hover
+                    //-                 .portfolio-hover-content
+                    //-                     i.fas.fa-plus.fa-3x
+                    //-             img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
+                    //-         .portfolio-caption
+                    //-             .portfolio-caption-heading Southwest
+                    //-             .portfolio-caption-subheading.text-muted Website Design
+                    //- .col-lg-4.col-sm-6
+                    //-     // Portfolio item 6
+                    //-     .portfolio-item
+                    //-         a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
+                    //-             .portfolio-hover
+                    //-                 .portfolio-hover-content
+                    //-                     i.fas.fa-plus.fa-3x
+                    //-             img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
+                    //-         .portfolio-caption
+                    //-             .portfolio-caption-heading Window
+                    //-             .portfolio-caption-subheading.text-muted Photography
 
 
         // Prototypes
@@ -209,95 +208,23 @@ section#about
                         p.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
                             
+// Contact
+section#contact
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading Contact
+        a(href='mailto:jasonpaulsparks@gmail.com')
+          i.fa.fa-envelope.fa-5x(aria-hidden='true')
+        h3.section-subheading.text-muted
 
-    // Contact
-    section#contact.page-section
-      .container
-        .text-center
-          h2.section-heading.text-uppercase Contact Us
-          h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+          br
+          | Feel free to 
+          a(href='mailto:jasonpaulsparks@gmail.com') email
+          |  me
+          |       or connect via the social buttons in the footer below.
 
-        // * * * * * * * * * * * * * * *
-        // * * SB Forms Contact Form * *
-        // * * * * * * * * * * * * * * *
 
-        // This form is pre-integrated with SB Forms.
-        // To make this form functional, sign up at
-        // https://startbootstrap.com/solution/contact-forms
-        // to get an API token!
-
-        form#contactForm(data-sb-form-api-token='API_TOKEN')
-          .row.align-items-stretch.mb-5
-            .col-md-6
-              .form-group
-
-                // Name input
-                input#name.form-control(
-                  type='text',
-                  placeholder='Your Name *',
-                  data-sb-validations='required'
-                )
-                .invalid-feedback(data-sb-feedback='name:required')
-                  | A name is required.
-
-              .form-group
-
-                // Email address input
-                input#email.form-control(
-                  type='email',
-                  placeholder='Your Email *',
-                  data-sb-validations='required,email'
-                )
-                .invalid-feedback(data-sb-feedback='email:required')
-                  | An email is required.
-                .invalid-feedback(data-sb-feedback='email:email')
-                  | Email is not valid.
-
-              .form-group.mb-md-0
-
-                // Phone number input
-                input#phone.form-control(
-                  type='tel',
-                  placeholder='Your Phone *',
-                  data-sb-validations='required'
-                )
-                .invalid-feedback(data-sb-feedback='phone:required')
-                  | A phone number is required.
-
-            .col-md-6
-              .form-group.form-group-textarea.mb-md-0
-
-                // Message input
-                textarea#message.form-control(
-                  placeholder='Your Message *',
-                  data-sb-validations='required'
-                )
-                .invalid-feedback(data-sb-feedback='message:required')
-                  | A message is required.
-
-          // Submit success message
-          //
-          // This is what your users will see when the form
-          // has successfully submitted
-
-          #submitSuccessMessage.d-none
-            .text-center.text-white.mb-3
-              .fw-bolder Form submission successful!
-              | To activate this form, sign up at
-              br
-              a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-          // Submit error message
-          //
-          // This is what your users will see when there is
-          // an error submitting the form
-
-          #submitErrorMessage.d-none
-            .text-center.text-danger.mb-3 Error sending message!
-
-          // Submit Button
-          .text-center
-            button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
 
     // Footer
     footer.footer.py-4
