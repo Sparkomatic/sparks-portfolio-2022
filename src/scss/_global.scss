@@ -21,6 +21,7 @@ body {
 p {
     line-height: $line-height-lg;
     font-size: 1.25rem;
+    // text-align: left;
     // color: black;
 }
 
@@ -45,14 +46,16 @@ p {
 
     p.caveat  {
         max-width: 60%;
-        text-align: center;
         margin: 0 auto;
         margin-bottom: 4rem;
         font-weight: 400;
         font-style: italic;
         font-family: $subheadings-font-family;
+        color: red;
+        text-align: left;
 
     }
+
 
 }
 
