@@ -9,34 +9,62 @@
           .col-lg-8
             .modal-body
               // Project details
-              h2.text-uppercase Squirrel
-              p.item-intro.text-muted Redesigning the on-boarding and set-up of a FinTech startup.
+              h2.text-uppercase ITV Hub
+              p.item-intro.text-muted Redesigning ITV Hub Search feature
               .row
-                .col-lg-4.col-sm-6.mb-4
+                .col-12.mb-4
                   img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/1.jpg', alt='...')
-                .col-lg-4.col-sm-6.mb-4
+              .row
+                .col-12.mb-4
                   img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/1.jpg', alt='...')
-                .col-lg-4.col-sm-6.mb-4
-                  img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/1.jpg', alt='...')
+
               ul.list-inline
                 li
                   | Client:
                   strong
-                    a(href='https://squirrel.me') Squirrel
-                  |                       - Date: 
-                  strong June 2017
+                    a(href='https://www.itv.com/') ITV Hub
+                  |  - Date: 
+                  strong June 2021
                   |  - Service: 
                   strong UX Design
                   | .
               h4 Summary
               p
-                | Squirrel is a bank account, controlled by an app, aimed at making managing your money easy. We completely redesigned the onboarding, signup and activation process for their app.
+                | ITV Hub is a service for watching live TV, catchup TV and streaming video on demand. Users can find content by browsing or they can use the search tool for finding specific content. I completely redesigned the Search tool.
+
               h4 Problem
               p
-                | A number of users had downloaded the app which had a convoluted onboarding and setup process. Users were skipping through this onboarding and consequently, on first using the app, didn&apos;t really understand how to use it. The result of this was they never continued using Squirrel.
+                | A combination of user interviews, surveys and task-based usability testing and analytics data of our current search revealed the following.
+
+              ul.list
+                li
+                  | On Browser, no messaging around unsuccessful searches (dead-end results) so the user is unsure if the problem lies at their end.
+                li
+                  | Search is not intelligent (doesn’t handle spelling mistakes).
+                li
+                  | A number of users refer to certain shows by their acronyms and when searching by popular acronyms the appropriate show is not returned.
+                li
+                  | On Smart TV, due to the lack of fuzzy search and predictive search, a high number of TV remote keypresses were required to return some content.
+                li
+                  | The ‘focus navigation’ pattern used by Smart TV creates restrictions such as having to navigate over a row of characters on a keyboard before being able to select one of the search results.
+                li
+                  | Some of the matches for content were no longer available to watch so would create dead-end journeys.
+
+                
               h4 Solution
               p
-                    | We took the 3 stage process of onboarding, signup and activation, merging all three in to one combined linear flow, cutting the number of steps, and vastly shortening the copy by augmenting it with icons and diagrams to reduce congintive load of a previously text heavy experince. We were also able to gain the user&apos;s trust in using the app and the service by highlithing early on the types of protection their money had by using the familar logos of the bank that was protetcing their money, and the financial standards agency that authorised and regulated Squirrel.
+                    | Integrated a new search engine that offers fuzzy search and predictive search as well as matching on synonyms and an availability check. Returned results in a grid of thumbnails enabling matches to be surfaced after a few key presses. For Smart TV created a mini keyboard variant that allowed more space to display search results while still maintaining readability. Introduced recent searches links for users that regularly search for the same show.
+
+              h4 Tools and techniques
+              p
+                    | User interviews, analytics data, user surveys, prototypes plugged into a development version of the new search API, task-based usability tests (Userzoom) both to identify current problems and validate design solutions.
+
+              h4 Case Study
+              p
+                    | Full case study unavailable until the final work has been released. I’m happy to elaborate if there are any specific questions that I can answer without disclosing sensitive information.
+
+
+
             button.btn.btn-primary.btn-xl.text-uppercase(data-bs-dismiss='modal', type='button')
                 i.fas.fa-times.me-1
                 | Close Project
