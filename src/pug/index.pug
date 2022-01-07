@@ -118,9 +118,9 @@ section#about
 
                     p.caveat Please note for design solutions that have not yet been released, designs have been changed and   made more generic. Any research findings unique to the client have also been replaced with common problems.
                 .row
-                    .col-lg-6.col-sm-6.m-12
+                    .col-lg-6.col-sm-6.mb-4
                         // Portfolio item 1
-                        .portfolio-item.ms-auto
+                        .portfolio-item
                             a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
                                 .portfolio-hover
                                     .portfolio-hover-content
@@ -171,24 +171,25 @@ section#about
             .container
                 .text-center
                     h2.section-heading.text-uppercase Prototypes
-                    h3.section-subheading Here are my generic Smart TV prototypes to demo my advanced protptyping skills.
+                    h3.section-subheading Here are my generic Smart TV prototypes to demo my protptyping skills.
                     p.caveat Depending on your browser you may need to first <b>mouse click</b> on the prototype, then <b>use your cursor keys and enter key</b> as if it was a TV remote. 
 
                 .row
-                  .col-lg-6.col-sm-6.mb-4.mb-lg-0
-                    .prototype-item
-                      a(href='www.something.com')
-                        img(src='assets/img/prototypes/1.png')
-                      h4.my-3 Smart TV Search
-                      p.text-muted
-                          | This prototype uses <b>'The Movie Database'</b> search API to return content matches.
-                  .col-lg-6.col-sm-6.mb-4.mb-lg-0
-                    .prototype-item
-                      a(href='www.something.com')
-                        img(src='assets/img/prototypes/2.png')
-                      h4.my-3 Smart TV Video Player
-                      p.text-muted
-                          | This prototype is a video player with play, pause, skip, thumbnail scrubbing and multi-voice subtitles.
+                    .col-lg-6.col-sm-6.mb-4
+                      .prototype-item
+                        a(href='www.something.com')
+                          img.img-fluid(src='assets/img/prototypes/2.png')
+                        h4.my-3 Smart TV Video Player
+                        p.text-muted
+                            | This prototype is a video player with play, pause, skip, thumbnail scrubbing and multi-voice subtitles.
+                    .col-lg-6.col-sm-6.mb-4
+                      .prototype-item
+                        a(href='www.something.com')
+                          img.img-fluid(src='assets/img/prototypes/1.png')
+                        h4.my-3 Smart TV Search
+                        p.text-muted
+                            | This prototype uses <b>'The Movie Database'</b> search API to return content matches.
+
                             
 // Contact
 section#contact
@@ -219,7 +220,7 @@ section#contact
             //- a.btn.btn-dark.btn-social.mx-2(href='#!')
             //-   i.fab.fa-facebook-f
             a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/jason-sparks-uk/')
-              h1.fab.fa-linkedin-in
+              h1.fab.fa-linkedin-in.fa-2x
           //- .col-lg-4.text-lg-end
 
           //- a.link-light.text-decoration-none.me-3(href='#!') Privacy Policy
