@@ -11335,9 +11335,8 @@ a {
 .page-section p.caveat {
   max-width: 70%;
   margin: 0 auto;
-  margin-bottom: 4rem;
-  font-weight: 400;
-  font-style: italic;
+  margin-bottom: 3rem;
+  font-weight: 300;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-align: center;
 }
@@ -11409,7 +11408,7 @@ a {
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 2.5rem;
+    height: 2rem;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
