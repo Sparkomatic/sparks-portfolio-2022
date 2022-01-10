@@ -11492,10 +11492,10 @@ header.masthead .masthead-strapline {
   top: 0;
   bottom: 0;
   left: 40px;
-  width: 2px;
+  width: 3px;
   margin-left: -1.5px;
   content: "";
-  background-color: #e9ecef;
+  background-color: #B24E3D;
 }
 .timeline > li {
   position: relative;
