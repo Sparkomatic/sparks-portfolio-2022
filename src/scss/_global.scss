@@ -20,46 +20,70 @@ body {
 
 p {
     line-height: $line-height-lg;
-    font-size: 1.25rem;
-    // text-align: left;
-    // color: black;
+    font-weight: 400;
+    // font-size: 1.25rem;
+    font-size: 16px;
+
 }
 
-ul {
-    margin-bottom: 4rem;
-}
+// ul {
+//     margin-bottom: 4rem;
+// }
 
 
-li {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    margin-bottom: 1.5rem;
-}
+// li {
+//     font-size: 1.25rem;
+//     line-height: 1.75rem;
+//     margin-bottom: 1.5rem;
+// }
 
-a {
-    font-size: 1.5rem;
-    text-decoration: underline;
-}
+// a {
+//     font-size: 1.5rem;
+//     text-decoration: underline;
+// }
 
 // Spacing and heading styling for page sections
 
 .page-section {
     padding: 6rem 0;
 
-    h2.section-heading {
-        font-size: 2.5rem;
+
+
+    h1 {
+        // font-size: 2.5rem;
+        font-size: 28px;
         margin-top: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 
-    h3.section-subheading {
-        font-size: 1.5rem;
-        font-weight: 400;
-        max-width: 70%;
-        margin: 0 auto;
+    h2 {
+        font-size: 21px;
+        // max-width: 70%;
+        // margin: 0 auto;
+        margin-bottom: 1.25rem;
+    }
+
+    h3 {
+        // font-size: 1.5rem;
+        font-size: 18px;
+        // font-weight: 400;
+        font-weight: 700;
+        // max-width: 70%;
+        // margin: 0 auto;
         // font-style: italic;
-        font-family: $subheadings-font-family;
+        // font-family: $subheadings-font-family;
         margin-bottom: 2rem;
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
     }
 
     p.caveat  {

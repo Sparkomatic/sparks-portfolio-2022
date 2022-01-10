@@ -57,7 +57,7 @@ html(lang='en')
     section#about.page-section
       .container
         .text-center
-            h2.section-heading.text-uppercase About
+            h1.text-uppercase About
         .row
           .col-lg-12
             ul.timeline
@@ -66,7 +66,7 @@ html(lang='en')
                   img.rounded-circle.img-fluid(src='assets/img/about/1.jpg' alt='')
                 .timeline-panel
                   .timeline-heading
-                    h4 Me
+                    h2 Me
                   .timeline-body
                     p.text-muted
                       | I&apos;m a User Experience Designer with a background in front-end/back-end development and quality assurance.
@@ -75,7 +75,7 @@ html(lang='en')
                   img.rounded-circle.img-fluid(src='assets/img/about/2.jpg' alt='')
                 .timeline-panel
                   .timeline-heading
-                    h4 Mantra
+                    h2 Mantra
 
                   .timeline-body
                     p.text-muted
@@ -85,7 +85,7 @@ html(lang='en')
                   img.rounded-circle.img-fluid(src='assets/img/about/3.jpg' alt='')
                 .timeline-panel
                   .timeline-heading
-                    h4 History
+                    h2 History
                   .timeline-body
                     p.text-muted
                       | Before UX, I clocked up 12 years of development and quality assurance experience working in agile technology teams in  advertising, e-Commerce, music and video.
@@ -94,12 +94,12 @@ html(lang='en')
                   img.rounded-circle.img-fluid(src='assets/img/about/4.jpg' alt='')
                 .timeline-panel
                   .timeline-heading
-                    h4 Skills
+                    h2 Skills
                   .timeline-body
                     p.text-muted I can design, I can code, I can compose, and I can do handstands too.
               li.timeline-image
                 .timeline-image
-                  h4.text-dark
+                  h4
                     | Pleased
                     br
                     | to meet
@@ -111,8 +111,8 @@ html(lang='en')
     section#portfolio.page-section.bg-light
       .container
         .text-center
-          h2.section-heading.text-uppercase Portfolio
-          h3.section-subheading Here are a collection of projects I've worked on as a UX Designer.
+          h1.text-uppercase Portfolio
+          h2 Here are a collection of projects I've worked on as a UX Designer.
 
           p.caveat Please note for design solutions that have not yet been released, designs have been changed and made more generic.
         .row
@@ -125,8 +125,8 @@ html(lang='en')
                     i.fas.fa-plus.fa-3x
                 img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
               .portfolio-caption
-                .portfolio-caption-heading Redesigning Search
-                .portfolio-caption-subheading.text-muted ITV Hub
+                .h2 Redesigning Search
+                .h3.text-muted ITV Hub
           .col-lg-6.col-sm-6.mb-4
             // Portfolio item 2
             .portfolio-item
@@ -136,8 +136,8 @@ html(lang='en')
                     i.fas.fa-plus.fa-3x
                 img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
               .portfolio-caption
-                .portfolio-caption-heading Making Accessible Content Discoverable
-                .portfolio-caption-subheading.text-muted ITV Hub
+                .h2 Making Accessible Content Discoverable
+                .h3.text-muted ITV Hub
           .col-lg-6.col-sm-6.mb-4
             // Portfolio item 3
             .portfolio-item
@@ -147,8 +147,8 @@ html(lang='en')
                     i.fas.fa-plus.fa-3x
                 img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
               .portfolio-caption
-                .portfolio-caption-heading Redesigning a product personalisation process
-                .portfolio-caption-subheading.text-muted Firebox
+                .h2 Redesigning a product personalisation process
+                .h3.text-muted Firebox
           .col-lg-6.col-sm-6.mb-4.mb-lg-0
             // Portfolio item 4
             .portfolio-item
@@ -158,8 +158,8 @@ html(lang='en')
                     i.fas.fa-plus.fa-3x
                 img.img-fluid(src='assets/img/portfolio/4.jpg', alt='...')
               .portfolio-caption
-                .portfolio-caption-heading FinTech Onboarding
-                .portfolio-caption-subheading.text-muted Squirrel
+                .h2 FinTech Onboarding
+                .h3.text-muted Squirrel
 
 
 
@@ -167,9 +167,9 @@ html(lang='en')
     // Prototype
     section#prototype.page-section
       .container
-        .text-center
-          h2.section-heading.text-uppercase Prototypes
-          h3.section-subheading Here are some generic Smart TV prototypes I've been working on, just to demo the levels you can achieve.
+        .text-center.mx-auto
+          h1.text-uppercase Prototypes
+          h2 Here are some generic Smart TV prototypes I've been working on, just to demo the levels you can achieve.
           //- p.caveat Depending on your browser you may need to first <b>mouse click</b> on the prototype, then <b>use your cursor keys and enter key</b> as if it was a TV remote. 
 
         .row
@@ -177,24 +177,25 @@ html(lang='en')
             .prototype-item
               a(href='https://framer.com/share/CV-Prototypes--2PiWzradGiBHMQgs7Obz/jwPtEUC9J?fullscreen=1&highlights=0')
                 img.img-fluid(src='assets/img/prototypes/2.png')
-              h4.my-3 Smart TV Video Player
-              p.text-muted
+              h2.my-3 Smart TV Video Player
+              p
                 | This prototype is a video player with play, pause, skip, thumbnail scrubbing and multi-voice subtitles.
           .col-lg-6.col-sm-6.mb-4
             .prototype-item
               a(href='https://framer.com/share/CV-Prototypes--2PiWzradGiBHMQgs7Obz/mOorwA7FR?highlights=0')
                 img.img-fluid(src='assets/img/prototypes/1.png')
-              h4.my-3 Smart TV Search
-              p.text-muted
+              h2.my-3 Smart TV Search
+              p
                 | This prototype uses <b>'The Movie Database'</b> search API to return content matches.
 
 
     // Contact
     section#contact.page-section
       .container
-        .text-center
+        .text-center.my-5
+          br
           h2.section-heading.text-uppercase Contact
-          h3.section-subheading Always happy to talk design, prototyping, code, music and the weather.
+          h4.section-subheading Always happy to talk design, prototyping, code, music and the weather.
           p
             a(href='mailto:jasonpaulsparks@gmail.com') jasonpaulsparks@gmail
           br
@@ -213,7 +214,7 @@ html(lang='en')
 
 
     // Footer
-    footer.footer.py-4
+    footer.footer.py-5
       .container
         .row.align-items-center
           //- .col-lg-4.text-lg-start
