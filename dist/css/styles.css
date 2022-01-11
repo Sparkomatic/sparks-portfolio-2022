@@ -11387,7 +11387,7 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #B24E3D;
+  text-decoration: underline;
 }
 
 @media (min-width: 992px) {
@@ -11492,7 +11492,7 @@ header.masthead .masthead-strapline {
   top: 0;
   bottom: 0;
   left: 40px;
-  width: 3px;
+  width: 2px;
   margin-left: -1.5px;
   content: "";
   background-color: #B24E3D;
@@ -11537,7 +11537,7 @@ header.masthead .masthead-strapline {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid #B24E3D;
   border-radius: 100%;
   background-color: #B24E3D;
 }
