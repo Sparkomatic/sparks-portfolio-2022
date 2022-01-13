@@ -9,11 +9,14 @@
 
 html {
     scroll-padding-top: 4.5rem;
+    font-size: 16px;
+
 }
 
 body {
     position: relative;
     overflow-x: hidden;
+
 }
 
 // Adjust the line height of paragraphs
@@ -21,8 +24,10 @@ body {
 p {
     line-height: $line-height-lg;
     font-weight: 400;
+    font-size: 1rem;
     // font-size: 1.25rem;
-    font-size: 16px;
+    // font-size: 16px;
+    // font-size: 32px;
 
 }
 
@@ -51,21 +56,23 @@ p {
 
     h1 {
         // font-size: 2.5rem;
-        font-size: 28px;
+        // font-size: 28px;
+        font-size: 1.75rem;
         margin-top: 0;
         margin-bottom: 1rem;
     }
 
     h2 {
-        font-size: 21px;
+        font-size: 1.3rem;
+        // font-size: 21px;
         // max-width: 70%;
         // margin: 0 auto;
         margin-bottom: 1.25rem;
     }
 
     h3 {
-        // font-size: 1.5rem;
-        font-size: 18px;
+        font-size: 1.125rem;
+        // font-size: 18px;
         // font-weight: 400;
         font-weight: 700;
         // max-width: 70%;
@@ -76,13 +83,13 @@ p {
     }
 
     h4 {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
     }
 
 
     p {
-        font-size: 16px;
+        // font-size: 16px;
         font-weight: 400;
     }
 

@@ -3,6 +3,7 @@
 //
 
 #portfolio {
+
     .portfolio-item {
         max-width: 36rem;
         margin-left: auto;
@@ -69,6 +70,10 @@
         padding-bottom: 6rem;
         text-align: left;
 
+        li {
+            margin-bottom: 1rem;
+        }
+
         h2 {
             font-size: 3rem;
             line-height: 3rem;
@@ -81,10 +86,6 @@
         }
 
         p {
-            margin-bottom: 2rem;
-        }
-
-        ul.list-inline {
             margin-bottom: 2rem;
         }
 
